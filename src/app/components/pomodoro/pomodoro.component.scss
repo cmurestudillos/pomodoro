@@ -1,0 +1,16 @@
+.pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+button {
+  margin: 10px;
+}
+mat-button-toggle-group {
+  margin-bottom: 20px;
+}

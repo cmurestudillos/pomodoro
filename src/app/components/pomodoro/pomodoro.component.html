@@ -1,0 +1,16 @@
+<div class="pomodoro-container">
+  <mat-button-toggle-group (change)="onModeChange($event.value)">
+    <mat-button-toggle [value]="TimerMode.Pomodoro">Focus (45m)</mat-button-toggle>
+    <mat-button-toggle [value]="TimerMode.ShortBreak">Short Break (15m)</mat-button-toggle>
+    <mat-button-toggle [value]="TimerMode.LongBreak">Long Break (30m)</mat-button-toggle>
+  </mat-button-toggle-group>
+  <mat-progress-spinner
+    [value]="progress"
+    [mode]="isRunning ? 'determinate' : 'determinate'"
+  ></mat-progress-spinner>
+  <h2>{{ minutes }}:{{ seconds | number: '2.0-0' }}</h2>
+  <button mat-raised-button color="primary" (click)="toggleTimer()">
+    {{ isRunning ? 'Pause' : 'Start' }}
+  </button>
+  <button mat-raised-button color="warn" (click)="resetTimer()">Reset</button>
+</div>
