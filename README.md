@@ -25,7 +25,7 @@ Esta es una aplicaci√≥n de temporizador Pomodoro desarrollada con Angular. La t√
 1. Clona este repositorio:
 
    ```
-   git clone https://github.com/tu-usuario/pomodoro-app.git
+   git clone https://github.com/cmurestudillos/pomodoro.git
    ```
 
 2. Navega al directorio del proyecto:
